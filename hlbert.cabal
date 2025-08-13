@@ -1,0 +1,21 @@
+cabal-version:   3.8
+name:            hilbert
+version:         0.1.0.0
+license:         NONE
+author:          akince22
+maintainer:      akince22@itu.edu.tr
+build-type:      Simple
+extra-doc-files: CHANGELOG.md
+
+common warnings
+  ghc-options: -Wall
+
+executable hilbert
+  import:           warnings
+  hs-source-dirs:   .
+  main-is:          Main.hs
+  default-language: Haskell2010
+  ghc-options:      -O2
+  build-depends:
+      base >=4.18 && <5
+    , ghc-heap
